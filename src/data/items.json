@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Silver",
+    "price": 10.99,
+    "imgUrl": "/imgs/silver.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Black Leather Strap",
+    "price": 1199,
+    "imgUrl": "/imgs/black-leather.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Blue Face",
+    "price": 1.05,
+    "imgUrl": "/imgs/blue-face.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Brown Leather",
+    "price": 14000,
+    "imgUrl": "/imgs/brown-leather.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Brown Strap",
+    "price": 14000,
+    "imgUrl": "/imgs/brown-strap.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Dual Tone",
+    "price": 14000,
+    "imgUrl": "/imgs/dual-tone.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Pocket Watch",
+    "price": 14000,
+    "imgUrl": "/imgs/pocket.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Silver",
+    "price": 14000,
+    "imgUrl": "/imgs/silver.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Brown Leather",
+    "price": 14000,
+    "imgUrl": "/imgs/uhrge.jpg"
+  }
+]
