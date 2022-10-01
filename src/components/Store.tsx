@@ -4,12 +4,14 @@ import { Item } from './Item'
 
 export function Store() {
   return (
-    <StoreStyles>
-      <div className='grid'>
-        {items?.map(item => (
-          <Item {...item}></Item>
-        ))}
-      </div>
-    </StoreStyles>
+    <>
+      <StoreStyles>
+        <div className='grid'>
+          {items?.map(item => (
+            <Item {...item}></Item>
+          ))}
+        </div>
+      </StoreStyles>
+    </>
   )
 }

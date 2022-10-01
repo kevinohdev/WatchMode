@@ -5,7 +5,7 @@ const NavbarStyles = styled.div`
     display: flex;
     justify-content: space-between;
     min-height: auto;
-    background-color: gold;
+    background-color: rgba(40, 50, 40);
     padding: 1rem;
   }
 

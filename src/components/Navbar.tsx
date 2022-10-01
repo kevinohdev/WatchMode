@@ -1,11 +1,15 @@
+import { useShoppingCart } from '../context/ShoppingCartContext'
 import NavbarStyles from '../styles/NavbarStyles'
+import { Cart } from './Cart'
 
 function Navbar() {
+  const { openCart } = useShoppingCart();
+
   return (
     <NavbarStyles>
       <div className='nav'>
         <span>Fake Store</span>
-        <button type='button' className='button'>
+        <button type='button' className='button' onClick={openCart}>
           <svg
             width="2rem"
             height="2rem"

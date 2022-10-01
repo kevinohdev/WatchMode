@@ -1,12 +1,14 @@
+import { Cart } from "./components/Cart"
 import Navbar from "./components/Navbar"
 import { Store } from "./components/Store"
+import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 
 function App() {
   return (
-    <div className="App">
+    <ShoppingCartProvider>
       <Navbar></Navbar>
       <Store></Store>
-    </div>
+    </ShoppingCartProvider>
   )
 }
 
