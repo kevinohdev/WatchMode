@@ -6,7 +6,7 @@ const StoreStyles = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 400px);
   grid-template-rows: repeat(auto-fill, 400px);
-  grid-gap: 1rem;
+  grid-gap: 2rem .5rem;
   justify-content: center;
   padding: 1rem;
 }`;
