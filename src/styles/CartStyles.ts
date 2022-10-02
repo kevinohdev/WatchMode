@@ -10,6 +10,12 @@ const CartStyles = styled.div`
   height: 100vh;
   background: rgba(50, 50, 50);
  }
+
+ button {
+  position: fixed;
+  top: 0;
+  right: 0;
+ }
 `;
 
 export default CartStyles;

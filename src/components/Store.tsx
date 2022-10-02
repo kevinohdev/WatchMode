@@ -1,4 +1,4 @@
-import items from '../data/items.json'
+import storeItems from '../data/storeItems.json'
 import StoreStyles from '../styles/StoreStyles'
 import { Item } from './Item'
 
@@ -7,7 +7,7 @@ export function Store() {
     <>
       <StoreStyles>
         <div className='grid'>
-          {items?.map(item => (
+          {storeItems?.map(item => (
             <Item {...item}></Item>
           ))}
         </div>
