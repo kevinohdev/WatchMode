@@ -5,7 +5,7 @@ const ItemStyles = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgba(120, 114, 117, 0.8);
     height: 100%;
     width: 100%;
     padding-bottom: 4px;
@@ -20,6 +20,7 @@ const ItemStyles = styled.div`
   button {
     width: 100%;
     border-radius: 0;
+    font-weight: bold;
   }
 `;
 

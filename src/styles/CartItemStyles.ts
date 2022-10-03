@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 const CartItemStyles = styled.div`
- .container {
-    background-color: goldenrod;
- }
-
  .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr

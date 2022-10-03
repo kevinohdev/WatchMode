@@ -17,7 +17,7 @@ export function Item({ id, name, price, imgUrl }: StoreItemProps) {
         <h3>{name}</h3>
         <p>${formatPrice(price)}</p>
       </div>
-      <button type="button" onClick={() => increaseQty(id)}>Add To Cart</button>
+      <button type="button" onClick={() => increaseQty(id)} className='add-button'>ADD TO CART</button>
     </ItemStyles>
   )
 }
