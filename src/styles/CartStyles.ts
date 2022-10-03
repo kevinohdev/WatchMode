@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const CartStyles = styled.div`
  .container {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px 50px 50px;
   z-index: 5;
   position: absolute;
   top: 0;
@@ -19,15 +21,10 @@ const CartStyles = styled.div`
   margin-bottom: 10px;
  }
 
- .grid:last-child {
-  padding-bottom: 50px;
-  grid-template-columns: 1fr;
- }
-
  .close-button {
   position: fixed;
-  top: 5rem;
-  right: 5rem;
+  top: 1rem;
+  right: 1rem;
  }
 
 
@@ -39,6 +36,7 @@ const CartStyles = styled.div`
  .checkout {
   width: 100%;
   border-radius: 0;
+  grid-row-start: 4 / 1;
  }
 `;
 

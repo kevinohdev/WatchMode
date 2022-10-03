@@ -20,11 +20,9 @@ export function Cart({ cartOpen }: CartProps) {
               <CartItem key={item.id} {...item}></CartItem>
             ))}
           </div>
-          <div className="order-total">
-            <div>Total Quantity:</div>
-            <div>Total Price:</div>
-            <button type="button" className="checkout">CHECKOUT</button>
-          </div>
+          <div>Total Quantity:</div>
+          <div>Total Price:</div>
+          <button type="button" className="checkout">CHECKOUT</button>
         </div>
       </CartStyles>}
     </>
