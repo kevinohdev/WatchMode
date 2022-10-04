@@ -38,6 +38,11 @@ const CartStyles = styled.div`
   border-radius: 0;
   grid-row-start: 4 / 1;
  }
+
+ .total {
+  display: flex;
+  justify-content: space-between;
+ }
 `;
 
 export default CartStyles;

@@ -7,14 +7,13 @@ import { useShoppingCart } from "../context/ShoppingCartContext";
 type CartItemProps = {
   id: number
   quantity: number
-  event: Event
 }
 
-export function CartItem({ id, quantity, event }: CartItemProps) {
+export function CartItem({ id, quantity }: CartItemProps) {
   const item = storeItems.find(item => item.id === id)
   if (item === null) return null
   console.log('item', item)
-  const { increaseQty } = useShoppingCart();
+  const { increaseQty, decreaseQty } = useShoppingCart();
   return (
     <CartItemStyles>
       <div className="grid">
@@ -26,9 +25,9 @@ export function CartItem({ id, quantity, event }: CartItemProps) {
         <div className="item-subtotal">
           <div className="margin-left">${formatPrice(item?.price * quantity)}</div>
           <div className="quantity">
-            <button type="button">-</button>
+            <button type="button" onClick={() => decreaseQty(id)}>-</button>
             <div>{quantity}</div>
-            <button type="button">+</button>
+            <button type="button" onClick={() => increaseQty(id)}>+</button>
           </div>
         </div>
       </div>

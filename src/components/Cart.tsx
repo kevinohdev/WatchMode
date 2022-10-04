@@ -1,5 +1,6 @@
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartStyles from "../styles/CartStyles";
+import { formatPrice } from "../utils/formatPrice";
 import { CartItem } from "./CartItem";
 
 type CartProps = {
@@ -7,7 +8,7 @@ type CartProps = {
 }
 
 export function Cart({ cartOpen }: CartProps) {
-  const { closeCart, cartItems } = useShoppingCart();
+  const { closeCart, cartItems, cartQty, totalPrice } = useShoppingCart();
   console.log('cart items', cartItems)
   return (
     <>
@@ -20,8 +21,10 @@ export function Cart({ cartOpen }: CartProps) {
               <CartItem key={item.id} {...item}></CartItem>
             ))}
           </div>
-          <div>Total Quantity:</div>
-          <div>Total Price:</div>
+          <div className="total">
+            <div>Total Quantity: {cartQty}</div>
+            <div>Total Price: ${formatPrice(totalPrice)}</div>
+          </div>
           <button type="button" className="checkout">CHECKOUT</button>
         </div>
       </CartStyles>}
