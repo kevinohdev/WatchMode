@@ -14,18 +14,18 @@ export function Cart({ cartOpen }: CartProps) {
     <>
       {cartOpen && <CartStyles>
         <div className="container">
-          <div>Your Shopping Cart</div>
+          <div className="bold">Your Shopping Cart</div>
           <button type="button" className="close-button" onClick={closeCart}>x</button>
           <div className="grid">
             {cartItems.map(item => (
               <CartItem key={item.id} {...item}></CartItem>
             ))}
           </div>
-          <div className="total">
+          <div className="total bold">
             <div>Total Quantity: {cartQty}</div>
             <div>Total Price: ${formatPrice(totalPrice)}</div>
           </div>
-          <button type="button" className="checkout">CHECKOUT</button>
+          <button type="button" className="checkout bold">CHECKOUT</button>
         </div>
       </CartStyles>}
     </>

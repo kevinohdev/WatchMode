@@ -12,8 +12,11 @@ const CartStyles = styled.div`
   min-height: 100%;
   width: 50vw;
   background: rgba(50, 50, 50);
+  color: white;
   overflow-y: auto;
- }
+
+  /* @media (max-width: ) {} */
+ 
 
  .grid {
   display: grid;
@@ -42,6 +45,11 @@ const CartStyles = styled.div`
  .total {
   display: flex;
   justify-content: space-between;
+ }
+
+ .bold {
+  font-weight: 700;
+  padding: 1rem;
  }
 `;
 

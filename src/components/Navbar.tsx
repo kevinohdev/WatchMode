@@ -1,14 +1,16 @@
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import NavbarStyles from '../styles/NavbarStyles'
+import logo from '../assets/logo.png'
 import { Cart } from './Cart'
 
 function Navbar() {
-  const { openCart } = useShoppingCart();
+  const { openCart, cartQty } = useShoppingCart();
 
   return (
     <NavbarStyles>
       <div className='nav'>
-        <span>Fake Store</span>
+        <img src={logo} alt='Watch Mode Logo'></img>
+        {cartQty > 0 && <div className='qty'>{cartQty}</div>}
         <button type='button' className='button' onClick={openCart}>
           <svg
             width="2rem"

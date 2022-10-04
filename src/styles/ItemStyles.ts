@@ -5,7 +5,7 @@ const ItemStyles = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(120, 114, 117, 0.8);
+    background-color: rgba(232, 232, 232, 255);
     height: 100%;
     width: 100%;
     padding-bottom: 4px;
