@@ -14,7 +14,7 @@ const CartStyles = styled.div`
   background: rgba(50, 50, 50);
   color: white;
   overflow-y: auto;
-
+ }
   /* @media (max-width: ) {} */
  
 
@@ -51,6 +51,6 @@ const CartStyles = styled.div`
   font-weight: 700;
   padding: 1rem;
  }
-`;
+`
 
 export default CartStyles;
