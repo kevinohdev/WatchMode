@@ -1,7 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react"
 import { Cart } from "../components/Cart"
-import { CartItem } from "../components/CartItem"
-import { Item } from "../components/Item"
 import storeItems from '../data/storeItems.json'
 
 type ShoppingCartProviderProps = {
@@ -35,10 +33,6 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
 
   const openCart = () => setCartOpen(true);
   const closeCart = () => setCartOpen(false);
-
-  // a function addToCart that checks if the item is already in the cart
-  //if there is an item already , increase the amount
-  //if there isn't an item already, add an amount: 1 to the object
 
   const increaseQty = (id: number) => {
     setCartItems(currentItems => {

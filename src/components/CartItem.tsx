@@ -11,8 +11,8 @@ type CartItemProps = {
 
 export function CartItem({ id, quantity }: CartItemProps) {
   const item = storeItems.find(item => item.id === id)
-  if (item === null) return null
-  console.log('item', item)
+  if (item == null) return null
+
   const { increaseQty, decreaseQty } = useShoppingCart();
   return (
     <CartItemStyles>

@@ -9,7 +9,7 @@ type CartProps = {
 
 export function Cart({ cartOpen }: CartProps) {
   const { closeCart, cartItems, cartQty, totalPrice } = useShoppingCart();
-  console.log('cart items', cartItems)
+
   return (
     <>
       {cartOpen && <CartStyles>
