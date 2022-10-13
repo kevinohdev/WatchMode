@@ -15,7 +15,9 @@ export function Cart({ cartOpen }: CartProps) {
       {cartOpen && <CartStyles>
         <div className="container">
           <div className="bold">Your Shopping Cart</div>
-          <button type="button" className="close-button" onClick={closeCart}>x</button>
+          <button type="button" className="close-button" onClick={closeCart}>
+            <div>x</div>
+          </button>
           <div className="grid">
             {cartItems.map(item => (
               <CartItem key={item.id} {...item}></CartItem>

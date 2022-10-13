@@ -18,6 +18,7 @@ const CartItemStyles = styled.div`
     button {
       font-size: 16px;
     }
+    font-weight: 700;
  }
 
  .quantity {
@@ -29,7 +30,11 @@ const CartItemStyles = styled.div`
  }
 
  button {
+  margin: 0 auto;
   font-size: 2rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
  }
 
  .margin-left {

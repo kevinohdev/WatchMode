@@ -14,6 +14,8 @@ const NavbarStyles = styled.div`
     align-items: center;
     border-radius: 50%;
     padding: 1rem;
+    background-color: #ffffffcb;
+    border-color: black;
   }
 
   span {
@@ -27,10 +29,10 @@ const NavbarStyles = styled.div`
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
-    background-color: orange;
+    background-color: #22efec;
     border-radius: 50%;
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.8rem;
+    width: 1.8rem;
     margin: auto;
     text-align: center;
   }

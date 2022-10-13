@@ -28,6 +28,13 @@ const CartStyles = styled.div`
   position: fixed;
   top: 1rem;
   right: 1rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
 
