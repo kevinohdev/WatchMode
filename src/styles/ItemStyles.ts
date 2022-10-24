@@ -3,9 +3,9 @@ import styled from 'styled-components'
 const ItemStyles = styled.div`
   .container {
     display: flex;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    background-color: rgba(232, 232, 232, 255);
     height: 100%;
     width: 100%;
     padding-bottom: 4px;
@@ -15,12 +15,25 @@ const ItemStyles = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   button {
-    width: 100%;
-    border-radius: 0;
-    font-weight: bold;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  button:hover {
+    color: rgba(0, 0, 0, 0.4);
   }
 `;
 

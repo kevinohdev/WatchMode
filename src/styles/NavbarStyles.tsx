@@ -4,6 +4,7 @@ const NavbarStyles = styled.div`
   .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     min-height: auto;
     padding: 1rem;
   }
@@ -12,10 +13,15 @@ const NavbarStyles = styled.div`
     display: grid;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     padding: 1rem;
-    background-color: #ffffffcb;
-    border-color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .button:hover {
+    color: #22efec77;
   }
 
   span {
@@ -27,18 +33,18 @@ const NavbarStyles = styled.div`
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     background-color: #22efec;
     border-radius: 50%;
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin: auto;
     text-align: center;
   }
 
   img {
-    height: 60px;
+    height: 50px;
   }
 `;
 

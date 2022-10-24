@@ -4,41 +4,48 @@ const CartItemStyles = styled.div`
  .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
  }
 
  img {
-  width: 150px;
-  height: 225px;
+  width: 12vw;
+  height: 12vw;
   object-fit: cover;
+  margin: auto;
  }
 
  .item-details, .item-subtotal {
-    display: grid;
-    align-items: center;
-    button {
-      font-size: 16px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-weight: 700;
  }
 
  .quantity {
-  display: flexbox;
-  justify-content: flex-start;
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 1rem;
+  border: 1px solid black;
+  width: 10vw;
+  height: 3vw;
  }
 
  button {
-  margin: 0 auto;
-  font-size: 2rem;
-  border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 10px;
  }
 
  .margin-left {
   margin-left: 2rem;
+ }
+
+ .font {
+  color: black;
  }
 `;
 

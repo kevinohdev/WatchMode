@@ -1,27 +1,29 @@
 import styled from "styled-components";
 
 const CartStyles = styled.div`
- .container {
-  display: grid;
-  grid-template-rows: 50px 1fr 50px 50px 50px;
+ .wrapper {
+  display: flex;
+  flex-direction: column;
   z-index: 5;
   position: absolute;
   top: 0;
   right: 0;
-  width: 60vw;
   min-height: 100%;
   width: 50vw;
-  background: rgba(50, 50, 50);
-  color: white;
+  background-color: white;
+  color: black;
   overflow-y: auto;
+  padding-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.8) -5px 0px 20px;
  }
-  /* @media (max-width: ) {} */
  
+ .cart-items {
+  flex: 1;
+ }
 
- .grid {
-  display: grid;
-  grid-template-rows: repeat(1fr);
-  margin-bottom: 10px;
+ hr {
+  margin-top: 1rem;
+  width: 95%;
  }
 
  .close-button {
@@ -29,12 +31,14 @@ const CartStyles = styled.div`
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  border-radius: 50%;
+  border: none;
+  background: transparent;
   height: 2rem;
   width: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
  }
 
 
@@ -46,7 +50,9 @@ const CartStyles = styled.div`
  .checkout {
   width: 100%;
   border-radius: 0;
-  grid-row-start: 4 / 1;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 1rem;
  }
 
  .total {
@@ -57,6 +63,10 @@ const CartStyles = styled.div`
  .bold {
   font-weight: 700;
   padding: 1rem;
+ }
+
+ .padding-top {
+  padding-top: 2rem;
  }
 `
 

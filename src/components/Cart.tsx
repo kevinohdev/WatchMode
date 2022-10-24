@@ -1,3 +1,4 @@
+import { HiXMark } from "react-icons/hi2";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartStyles from "../styles/CartStyles";
 import { formatPrice } from "../utils/formatPrice";
@@ -13,19 +14,22 @@ export function Cart({ cartOpen }: CartProps) {
   return (
     <>
       {cartOpen && <CartStyles>
-        <div className="container">
-          <div className="bold">Your Shopping Cart</div>
+        <div className="wrapper">
+          <div className="bold padding-bottom">Your Shopping Cart</div>
           <button type="button" className="close-button" onClick={closeCart}>
-            <div>x</div>
+            <HiXMark className="font"></HiXMark>
           </button>
-          <div className="grid">
+          <div className="cart-items padding-top">
             {cartItems.map(item => (
-              <CartItem key={item.id} {...item}></CartItem>
+              <>
+                <CartItem key={item.id} {...item}></CartItem>
+                <hr className="solid"></hr>
+              </>
             ))}
           </div>
           <div className="total bold">
-            <div>Total Quantity: {cartQty}</div>
-            <div>Total Price: ${formatPrice(totalPrice)}</div>
+            <div>Subtotal ({cartQty})</div>
+            <div>${formatPrice(totalPrice)}</div>
           </div>
           <button type="button" className="checkout bold">CHECKOUT</button>
         </div>
