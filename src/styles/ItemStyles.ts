@@ -3,10 +3,9 @@ import styled from 'styled-components'
 const ItemStyles = styled.div`
 
   .card {
-    aspect-ratio: 1 / 1.5;
+    aspect-ratio: 1 / 1.3;
   }
 
-  
   .stacked {
     display: grid;
   }

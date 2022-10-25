@@ -24,8 +24,6 @@ const NavbarStyles = styled.div`
     color: rgba(0, 0, 0, 0.5);
   }
 
- 
-
   .qty {
     display: grid;
     justify-content: center;

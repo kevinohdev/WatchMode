@@ -6,9 +6,9 @@ const StoreStyles = styled.div`
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   justify-content: center;
-  padding: 1rem;
+  gap: .25rem
 }
 
 `;
