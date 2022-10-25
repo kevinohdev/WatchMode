@@ -21,12 +21,10 @@ const NavbarStyles = styled.div`
   }
 
   .button:hover {
-    color: #22efec77;
+    color: rgba(0, 0, 0, 0.5);
   }
 
-  span {
-    padding: 1rem;
-  }
+ 
 
   .qty {
     display: grid;
@@ -35,7 +33,7 @@ const NavbarStyles = styled.div`
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
-    background-color: #22efec;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     height: 1.5rem;
     width: 1.5rem;

@@ -1,7 +1,7 @@
 import { useShoppingCart } from '../context/ShoppingCartContext'
 import NavbarStyles from '../styles/NavbarStyles'
 import logo from '../assets/logo.png'
-import { HiShoppingCart } from 'react-icons/hi2';
+import { IoBag } from "react-icons/io5";
 
 function Navbar() {
   const { openCart, cartQty } = useShoppingCart();
@@ -12,7 +12,7 @@ function Navbar() {
         <img src={logo} alt='Watch Mode Logo'></img>
         {cartQty > 0 && <div className='qty'>{cartQty}</div>}
         <button type='button' className='button' onClick={openCart}>
-          <HiShoppingCart></HiShoppingCart>
+          <IoBag></IoBag>
         </button>
       </div>
     </NavbarStyles >

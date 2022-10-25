@@ -13,14 +13,16 @@ export function Item({ id, name, price, imgUrl }: StoreItemProps) {
   const { increaseQty } = useShoppingCart();
   return (
     <ItemStyles>
-      <div className="container">
-        <img src={imgUrl} alt={name}></img>
-        <h3>{name}</h3>
-        <div className="flex">
-          <p>${formatPrice(price)}</p>
-          <button type="button" onClick={() => increaseQty(id)}>
+      <div className="card">
+        <div className="stacked">
+          <img src={imgUrl} alt={name}></img>
+          <div className="lightbox" onClick={() => increaseQty(id)}>
             <IoBagAdd></IoBagAdd>
-          </button>
+          </div>
+        </div>
+        <div className="card-content">
+          <h3>{name}</h3>
+          <p>${formatPrice(price)}</p>
         </div>
       </div>
     </ItemStyles>
