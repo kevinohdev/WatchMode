@@ -28,7 +28,7 @@ export function Cart({ cartOpen }: CartProps) {
             ))}
           </div>
           <div className="total bold">
-            <div>Subtotal ({cartQty})</div>
+            <div>Subtotal: ({cartQty} {(cartQty > 1) ? 'items' : 'item'})</div>
             <div>${formatPrice(totalPrice)}</div>
           </div>
           <button type="button" className="checkout bold">CHECKOUT</button>

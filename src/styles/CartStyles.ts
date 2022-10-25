@@ -51,16 +51,19 @@ const CartStyles = styled.div`
  }
 
  .checkout {
-  width: 100%;
-  border-radius: 0;
+  width: 95%;
   position: relative;
   bottom: 0;
   padding-bottom: 1rem;
+  margin: auto;
+  border: 1px solid;
  }
 
  .total {
   display: flex;
   justify-content: space-between;
+  width: 95%;
+  margin: auto;
  }
 
  .bold {
