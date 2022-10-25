@@ -9,7 +9,7 @@ const NavbarStyles = styled.div`
     padding: 1rem;
   }
 
-  .button {
+  button {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ const NavbarStyles = styled.div`
     color: black;
   }
 
-  .button:hover {
+  button:hover {
     color: rgba(0, 0, 0, 0.5);
   }
 
@@ -41,6 +41,7 @@ const NavbarStyles = styled.div`
 
   img {
     height: 50px;
+    border-radius: 9px;
   }
 `;
 

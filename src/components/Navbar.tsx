@@ -11,7 +11,7 @@ function Navbar() {
       <div className='nav'>
         <img src={logo} alt='Watch Mode Logo'></img>
         {cartQty > 0 && <div className='qty'>{cartQty}</div>}
-        <button type='button' className='button' onClick={openCart}>
+        <button type='button' onClick={openCart}>
           <IoBag></IoBag>
         </button>
       </div>

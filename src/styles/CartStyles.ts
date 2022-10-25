@@ -41,6 +41,9 @@ const CartStyles = styled.div`
   color: black;
  }
 
+ .close-button:hover {
+    color: rgba(0, 0, 0, 0.8);
+ }
 
  .order-total {
   position: absolute;

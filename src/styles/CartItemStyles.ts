@@ -13,14 +13,17 @@ const CartItemStyles = styled.div`
   height: 12vw;
   object-fit: cover;
   margin: auto;
+  border-radius: 9px;
  }
 
  .item-details, .item-subtotal {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     font-weight: 700;
  }
+
 
  .quantity {
   display: flex;
@@ -40,12 +43,8 @@ const CartItemStyles = styled.div`
   padding: 0 10px;
  }
 
- .margin-left {
-  margin-left: 2rem;
- }
-
- .font {
-  color: black;
+ button:hover {
+  color: rgba(0, 0, 0, 0.5)
  }
 `;
 

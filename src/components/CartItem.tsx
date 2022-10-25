@@ -14,7 +14,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
   const item = storeItems.find(item => item.id === id)
   if (item == null) return null
 
-  const { increaseQty, decreaseQty } = useShoppingCart();
+  const { increaseQty, decreaseQty, removeItem } = useShoppingCart();
   return (
     <CartItemStyles>
       <div className="grid">
@@ -32,12 +32,12 @@ export function CartItem({ id, quantity }: CartItemProps) {
           </div>
         </div>
         <div className="item-subtotal">
-          <button>
-            <HiXMark className="font"></HiXMark>
+          <button type="button" onClick={() => removeItem(id)} >
+            <HiXMark></HiXMark>
           </button>
-          <div className="margin-left">${formatPrice(item?.price * quantity)}</div>
+          <div>${formatPrice(item?.price * quantity)}</div>
         </div>
       </div>
-    </CartItemStyles>
+    </CartItemStyles >
   )
 }
