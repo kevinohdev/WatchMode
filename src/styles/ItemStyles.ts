@@ -29,7 +29,17 @@ const ItemStyles = styled.div`
   }
 
 
-    .lightbox:hover {
+    /* .lightbox:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      svg {
+        font-size: 3rem;
+        color: white;
+      }
+    } */
+
+    @media(hover: hover) and (pointer: fine) {
+      .lightbox:hover {
       background-color: rgba(0, 0, 0, 0.5);
 
       svg {
@@ -37,6 +47,7 @@ const ItemStyles = styled.div`
         color: white;
       }
     }
+  }
 
 
   img {

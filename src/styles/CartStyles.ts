@@ -15,6 +15,10 @@ const CartStyles = styled.div`
   overflow-y: auto;
   padding-bottom: 1rem;
   box-shadow: rgba(0, 0, 0, 0.8) -5px 0px 20px;
+
+  @media (max-width: 700px) {
+    width: 100vw;
+  }
  }
  
  .cart-items {
