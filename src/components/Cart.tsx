@@ -1,4 +1,4 @@
-import { HiXMark } from "react-icons/hi2";
+import { HiX } from "react-icons/hi";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartStyles from "../styles/CartStyles";
 import { formatPrice } from "../utils/formatPrice";
@@ -18,7 +18,7 @@ export function Cart({ cartOpen }: CartProps) {
           <div className="bold padding-bottom banner">
             <div>Your Shopping Cart</div>
             <button type="button" className="close-button" onClick={closeCart}>
-              <HiXMark></HiXMark>
+              <HiX></HiX>
             </button>
           </div>
 
