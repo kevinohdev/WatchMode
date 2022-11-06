@@ -33,19 +33,17 @@ const CartStyles = styled.div`
  .banner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
  }
 
  .close-button {
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: none;
   background: transparent;
-  height: 2rem;
-  width: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: black;
+  display: grid;
+  justify-content: center;
+  align-items: start;
  }
 
  .close-button:hover {
@@ -80,7 +78,7 @@ const CartStyles = styled.div`
  }
 
  .padding-top {
-  padding-top: 2rem;
+  padding-top: 1rem;
  }
 `
 

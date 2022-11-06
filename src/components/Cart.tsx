@@ -15,10 +15,10 @@ export function Cart({ cartOpen }: CartProps) {
     <>
       {cartOpen && <CartStyles>
         <div className="wrapper">
-          <div className="bold padding-bottom banner">
-            <div>Your Shopping Cart</div>
+          <div className="bold banner">
+            <div className="padding-top">Your Shopping Cart</div>
             <button type="button" className="close-button" onClick={closeCart}>
-              <HiX></HiX>
+              x
             </button>
           </div>
 
