@@ -34,12 +34,17 @@ const CartStyles = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
 
   button {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     border: none;
     background: transparent;
     color: rgb(0, 0, 0);
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
  }
 
   button:hover {
