@@ -61,6 +61,7 @@ const ItemStyles = styled.div`
       font-size: 1.7rem;
       background: transparent;
       border: none;
+      color: rgb(0, 0, 0);
     }
 
     .mobile-add {
