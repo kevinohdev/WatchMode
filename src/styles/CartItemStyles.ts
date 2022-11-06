@@ -16,8 +16,8 @@ const CartItemStyles = styled.div`
   border-radius: 9px;
 
   @media (max-width: 700px) {
-    width: 20vw;
-    height: 20vw;
+    width: 24vw;
+    height: 24vw;
   }
  }
 
@@ -40,7 +40,7 @@ const CartItemStyles = styled.div`
 
   @media (max-width: 700px) {
     width: 20vw;
-    height: 5vw;
+    height: 7vw;
   }
  }
 

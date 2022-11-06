@@ -26,6 +26,10 @@ const ItemStyles = styled.div`
     svg {
       color: transparent;
     }
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
 
@@ -46,6 +50,27 @@ const ItemStyles = styled.div`
     object-fit: cover;
     border-radius: 4px;
   }
+
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    
+    button {
+      font-size: 1.7rem;
+      background: transparent;
+      border: none;
+    }
+
+    .mobile-add {
+      @media (min-width: 600px) {
+        display: none;
+      }
+  }
+
+  }
+
 
 `;
 

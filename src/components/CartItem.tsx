@@ -3,6 +3,7 @@ import storeItems from '../data/storeItems.json'
 import { formatPrice } from "../utils/formatPrice";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { HiXMark, HiMinus, HiPlus } from "react-icons/hi2";
+import { toast } from "react-toast";
 
 
 type CartItemProps = {
@@ -15,6 +16,12 @@ export function CartItem({ id, quantity }: CartItemProps) {
   if (item == null) return null
 
   const { increaseQty, decreaseQty, removeItem } = useShoppingCart();
+
+  const handleClick = () => {
+    increaseQty(id);
+    toast('Item Added Successfully');
+  }
+
   return (
     <CartItemStyles>
       <div className="grid">
