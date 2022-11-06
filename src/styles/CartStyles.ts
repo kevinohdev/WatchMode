@@ -33,23 +33,19 @@ const CartStyles = styled.div`
  .banner {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+
+  button {
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
  }
 
- .close-button {
-  font-size: 2rem;
-  border: none;
-  background: transparent;
-  color: black;
-  display: grid;
-  justify-content: center;
-  align-items: start;
+  button:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
  }
-
- .close-button:hover {
-    color: rgb(30, 30, 30);
- }
-
 
  .order-total {
   position: absolute;
