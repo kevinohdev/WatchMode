@@ -65,6 +65,8 @@ const ItemStyles = styled.div`
     }
 
     .mobile-add {
+      color: rgb(0, 0, 0);
+
       @media (min-width: 600px) {
         display: none;
       }
