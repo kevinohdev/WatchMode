@@ -64,6 +64,7 @@ const CartStyles = styled.div`
   padding-bottom: 1rem;
   margin: auto;
   border: 1px solid;
+  color: rgb(0, 0, 0);
  }
 
  .total {

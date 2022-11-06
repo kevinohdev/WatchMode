@@ -56,12 +56,12 @@ const ItemStyles = styled.div`
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+    color: rgb(0, 0, 0);
     
     button {
       font-size: 1.7rem;
       background: transparent;
       border: none;
-      color: rgb(0, 0, 0);
     }
 
     .mobile-add {
