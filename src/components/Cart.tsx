@@ -15,10 +15,13 @@ export function Cart({ cartOpen }: CartProps) {
     <>
       {cartOpen && <CartStyles>
         <div className="wrapper">
-          <div className="bold padding-bottom">Your Shopping Cart</div>
-          <button type="button" className="close-button" onClick={closeCart}>
-            <HiXMark className="font"></HiXMark>
-          </button>
+          <div className="bold padding-bottom banner">
+            <div>Your Shopping Cart</div>
+            <button type="button" className="close-button" onClick={closeCart}>
+              <HiXMark></HiXMark>
+            </button>
+          </div>
+
           <div className="cart-items padding-top">
             {cartItems.map(item => (
               <>

@@ -30,10 +30,13 @@ const CartStyles = styled.div`
   width: 95%;
  }
 
+ .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
  .close-button {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
   font-size: 1.5rem;
   border: none;
   background: transparent;
@@ -46,8 +49,9 @@ const CartStyles = styled.div`
  }
 
  .close-button:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(30, 30, 30);
  }
+
 
  .order-total {
   position: absolute;

@@ -14,6 +14,11 @@ const CartItemStyles = styled.div`
   object-fit: cover;
   margin: auto;
   border-radius: 9px;
+
+  @media (max-width: 700px) {
+    width: 20vw;
+    height: 20vw;
+  }
  }
 
  .item-details, .item-subtotal {
@@ -32,6 +37,11 @@ const CartItemStyles = styled.div`
   border: 1px solid black;
   width: 10vw;
   height: 3vw;
+
+  @media (max-width: 700px) {
+    width: 20vw;
+    height: 5vw;
+  }
  }
 
  button {
