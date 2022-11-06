@@ -41,7 +41,6 @@ const NavbarStyles = styled.div`
 
   img {
     height: 50px;
-    border-radius: 9px;
   }
 `;
 
