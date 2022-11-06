@@ -6,6 +6,10 @@ const CartItemStyles = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   padding-top: 1rem;
+
+  button {
+    color: rgba(0, 0, 0);
+  }
  }
 
  img {
