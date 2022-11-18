@@ -31,6 +31,7 @@ const CartItemStyles = styled.div`
     justify-content: space-between;
     align-items: center;
     font-weight: 700;
+    text-align: center;
  }
 
 
@@ -40,7 +41,7 @@ const CartItemStyles = styled.div`
   justify-content: space-evenly;
   border: 1px solid black;
   width: 10vw;
-  height: 3vw;
+  height: 4vw;
 
   @media (max-width: 700px) {
     width: 20vw;
