@@ -45,7 +45,7 @@ const CartItemStyles = styled.div`
 
   @media (max-width: 700px) {
     width: 20vw;
-    height: 7vw;
+    height: 9vw;
   }
  }
 
